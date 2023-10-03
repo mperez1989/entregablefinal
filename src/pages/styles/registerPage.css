@@ -16,7 +16,7 @@ html {
     display: none;
 }
 .register__title {
-    margin-top: 70px;
+    margin-top: 120px;
     margin-bottom: 50px;
     
 }
@@ -24,7 +24,7 @@ html {
     
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 .register__items__container input {
