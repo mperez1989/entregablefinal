@@ -44,3 +44,20 @@
     margin-top: 50px;
     text-align: center;
 }
+@media(min-width: 500px) {
+    .login__image {
+        display: block;
+        width: 300px;
+    }
+
+}
+@media(min-width: 800px) {
+    .login__image {
+        position: absolute;
+        top: 80px;
+        left: 160px;
+        display: block;
+        width: 400px;
+    }
+
+}
