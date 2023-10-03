@@ -6,6 +6,7 @@ html {
 }
 
 .register__container {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,12 +17,11 @@ html {
     display: none;
 }
 .register__title {
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 50px;
     
 }
-.register__items__container {
-    
+.register__items__container {    
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -53,10 +53,21 @@ html {
 }
 @media(min-width: 500px) {
     .register__image {
+        position: relative;
         display: block;
-        margin-right: 30px;
-        width: 280px;
+        width: 350px;
     }
+    
+}
+@media(min-width: 800px) {
+    .register__image {
+        position: absolute;
+        left: 100px;
+        display: block;
+        margin-right: 1px;
+        width: 450px;
+    }
+    
     
 }
 
