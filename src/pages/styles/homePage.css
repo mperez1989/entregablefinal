@@ -34,6 +34,8 @@
 }
 .home__search__input::placeholder {
     color: white;
+    font-family: "urbanist";
+
 }
 .home__form__container:hover {
     box-shadow: 0 1px 6px 0 #dfe1e5;

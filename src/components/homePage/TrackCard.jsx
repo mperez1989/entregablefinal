@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux"
 import { addTrack } from "../../store/slices/tracksSlice"
 import { Link, useNavigate } from "react-router-dom"
+import "../homePage/trackCard.css"
 
 const TrackCard = ({ track }) => {
 
@@ -19,27 +20,27 @@ const TrackCard = ({ track }) => {
 
     
   return (
-    <section>
-        <header>
+    <section className="card__music__container">
+        <header className="card__music__header">
             <img src={track.album.images[0].url} alt="" />
         </header>
-        <article>
-            <Link to={`/tracks/${track.id}`}><h3>{track.name}</h3></Link>
-            <ul>
+        <article className="card__music__body">
+            <Link className="card__music__name" to={`/tracks/${track.id}`}><h3>{track.name}</h3></Link>
+            <ul className="card__music-artists__container">
                 {
                     track.artists.map(art => (
-                        <li onClick={() => handleArtist(art.id)} key={art.id}>{art.name}</li>
+                        <li className="card__music-artist__name" onClick={() => handleArtist(art.id)} key={art.id}>{art.name}</li>
                     ))
                 }
             </ul>
         </article>
-        <footer>   
-            <a target="_blank" href={track.external_urls.spotify}>
+        <footer className="card__music__footer">   
+            <a className="spotify__icon" target="_blank" href={track.external_urls.spotify}>
                 <i className='bx bxl-spotify'></i>
             </a>
-            <button onClick={handleAddTrack}>
+            <span className="plus__icon" onClick={handleAddTrack}>
                 <i className='bx bx-plus-circle'></i>
-            </button>
+            </span>
         </footer>
     </section>
   )

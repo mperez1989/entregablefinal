@@ -1,0 +1,75 @@
+.card__music__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card__music__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+.card__music__header img {
+    position: relative;
+    bottom: 25%;
+    transform: translateY(10%);
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+.card__music__name {
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-decoration-line: none;
+    color:rgba(255, 255, 255, 1);
+
+    cursor: pointer;
+
+}
+.card__music-artists__container {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.4);
+    
+    display: block;
+    cursor: pointer;
+    width: 100px;
+}
+.card__music__footer {
+    position: relative;
+    width: 70px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+.spotify__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bxl-spotify {
+    font-size: 20px;
+    color: white;
+}
+.plus__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bx-plus-circle {
+    font-size: 20px;
+    color: white;
+}
+
+
