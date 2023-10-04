@@ -47,6 +47,7 @@
 }
 @media(min-width: 500px) {
     .login__image {
+        
         display: block;
         width: 300px;
     }

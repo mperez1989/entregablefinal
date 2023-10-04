@@ -1,6 +1,7 @@
 .card__music__container {
     width: 100%;
     max-width: 350px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,8 +10,9 @@
 }
 .card__music__header {
     position: relative;
-    width: 6em;
-    aspect-ratio: 0.8;
+    width: 4em;
+    aspect-ratio: 1;
+    margin-right: 20px;
 }
 .card__music__header img {
     position: absolute;
@@ -29,9 +31,8 @@
 
 }
 .card__music__name {
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: rgba(255, 255, 255, 1);
-    ;
     font-weight: 400;
     text-decoration-line: none;
     cursor: pointer;
