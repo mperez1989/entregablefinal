@@ -17,7 +17,7 @@ const TrackPage = () => {
     const navigate = useNavigate()
 
     const handleBack = () => {
-        navigate(-1)
+        navigate("/")
 
     }
 

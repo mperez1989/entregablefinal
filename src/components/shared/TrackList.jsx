@@ -1,6 +1,14 @@
+import { useDispatch } from "react-redux"
+import { deleteTrack } from "../../store/slices/tracksSlice"
 
 
 const TrackList = ({ track }) => {
+
+    const dispatch = useDispatch()
+    
+    const handleDelete = () => {
+       dispatch(deleteTrack(track))
+    }
     console.log(track)
 
     
@@ -19,7 +27,7 @@ const TrackList = ({ track }) => {
                 }
             </ul>
         </article>
-        <footer>
+        <footer onClick={handleDelete}>
             <i className='bx bx-minus-circle'></i>
         </footer>
     </section>

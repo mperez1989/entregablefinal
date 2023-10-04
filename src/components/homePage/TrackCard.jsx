@@ -1,13 +1,19 @@
 import { useDispatch } from "react-redux"
 import { addTrack } from "../../store/slices/tracksSlice"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const TrackCard = ({ track }) => {
 
     const dispatch = useDispatch()
 
+    const navigate = useNavigate()
+
     const handleAddTrack = () => {
         dispatch(addTrack(track))
+
+    }
+    const handleArtist = (id) => {
+        navigate(`/artist/${id}`)
 
     }
 
@@ -22,7 +28,7 @@ const TrackCard = ({ track }) => {
             <ul>
                 {
                     track.artists.map(art => (
-                        <li key={art.id}>{art.name}</li>
+                        <li onClick={() => handleArtist(art.id)} key={art.id}>{art.name}</li>
                     ))
                 }
             </ul>

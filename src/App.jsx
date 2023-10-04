@@ -8,6 +8,7 @@ import { setCredentialSlice } from "./store/slices/credentials.slice"
 import { useDispatch } from "react-redux"
 import ProtectedRoute from "./pages/ProtectedRoute"
 import TrackPage from "./pages/TrackPage"
+import ArtistPage from "./pages/ArtistPage"
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<HomePage />} />
         <Route  path="/tracks/:id" element={<TrackPage />}/>
+        <Route path="/artist/:id" element={<ArtistPage />} />
       </Route>
     </Routes>
    </div>
