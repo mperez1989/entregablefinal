@@ -1,12 +1,19 @@
 import { useSelector } from "react-redux"
 import TrackList from "./TrackList"
+import "../shared/shared-style/headerMusic.css"
+import { useNavigate } from "react-router-dom"
 
 const HeaderMusic = () => {
 
     const tracksplayList = useSelector(store => store.tracks)
+
+
+    
   return (
-    <header>
+    <header className="header__container">
         <h1>Gift Music</h1>
+        <p>Mi Cuenta</p>
+
         <div>
             <form action="">
                 <div>

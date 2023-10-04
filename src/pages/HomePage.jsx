@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState} from "react"
 import useFetch from "../hooks/useFetch"
 import TrackCard from "../components/homePage/TrackCard"
+import "../pages/styles/homePage.css"
 
 const HomePage = () => {
 
@@ -27,11 +28,12 @@ const HomePage = () => {
 
 
   return (
-    <div>
-      <div>
-        <form onSubmit={handleSearch} action="">
-          <input ref={inputSearch} type="text" />
-          <select onChange={handleTracksPerPage} defaultValue={10}>
+    <div className="home">
+      <div className="home__container">
+        <form className="home__form__container" onSubmit={handleSearch} action="">
+          <span className="home__icon"></span>
+          <input className="home__search__input" ref={inputSearch} type="text" placeholder="Looking for... " />
+          <select className="home__select" onChange={handleTracksPerPage} defaultValue={10}>
             {
               [2, 4, 6, 8, 10].map(trackPerPage => (
                 <option key={trackPerPage} value={trackPerPage}>{trackPerPage}</option>
