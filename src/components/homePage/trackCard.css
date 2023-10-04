@@ -1,75 +1,65 @@
 .card__music__container {
     width: 100%;
-    height: auto;
+    max-width: 350px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0.5em 1em;
     gap: 10px;
 }
 .card__music__header {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    aspect-ratio: 1;
-    border-radius: 10px;
+    width: 6em;
+    aspect-ratio: 0.8;
 }
 .card__music__header img {
-    position: relative;
-    bottom: 25%;
-    transform: translateY(10%);
-    width: 80px;
-    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 65px;
     border-radius: 10px;
 }
+.card__music__body {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
 .card__music__name {
-    font-size: 0.7rem;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 1);
+    ;
     font-weight: 400;
     text-decoration-line: none;
-    color:rgba(255, 255, 255, 1);
-
     cursor: pointer;
-
 }
 .card__music-artists__container {
-    font-size: 0.8rem;
     font-weight: 400;
+    font-size: 0.8em;
     padding: 0;
+    margin-bottom: 0;
     color: rgba(255, 255, 255, 0.4);
-    
-    display: block;
-    cursor: pointer;
-    width: 100px;
+    ;
 }
 .card__music__footer {
-    position: relative;
-    width: 70px;
+    width: 50px;
     aspect-ratio: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 7px;
-}
-.spotify__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    gap: 0.5em;
 }
 .bxl-spotify {
-    font-size: 20px;
+    font-size: 1.5em;
     color: white;
-}
-.plus__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
 .bx-plus-circle {
-    font-size: 20px;
+    font-size: 1.5em;
     color: white;
 }
+
 
 
