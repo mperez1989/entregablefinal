@@ -12,7 +12,7 @@
     position: relative;
     width: 4em;
     aspect-ratio: 1;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .card__music__header img {
     position: absolute;
@@ -43,7 +43,7 @@
     padding: 0;
     margin-bottom: 0;
     color: rgba(255, 255, 255, 0.4);
-    ;
+    
 }
 .card__music__footer {
     width: 50px;
@@ -60,6 +60,12 @@
 .bx-plus-circle {
     font-size: 1.5em;
     color: white;
+}
+@media(min-width: 500px) {
+    .card__music__container {
+        width: 90%;
+    }
+
 }
 
 

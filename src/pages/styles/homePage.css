@@ -16,7 +16,7 @@
 }
 .home__form__container {
     border: 1px solid  #90a1c4;
-    width: 290px;
+    width: 270px;
     margin: 0 auto;
     margin-bottom: 25px;
     border-radius: 20px;
@@ -62,4 +62,14 @@
     color: white;
     background-color:  #90a1c4 ;
     text-align: center;
+}
+@media(min-width: 500px) {
+    .home__container {
+        width: 50%;
+    }  
+}
+@media(min-width: 800px) {
+    .home__container {
+        width: 30%;
+    }
 }
