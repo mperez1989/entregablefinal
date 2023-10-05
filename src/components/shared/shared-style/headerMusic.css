@@ -95,7 +95,7 @@
     position: absolute;
     top: 15px;
     left: 10px;
-    background-image: url("/public/icons/back.png");
+    background-image: url("/icons/back.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,6 +241,7 @@
     margin: 0;
     cursor: pointer;
     margin-top: 5px;
+    z-index: 3;
 }
 .header__create__btn {
     border: 1px solid #FFFFFF ;
