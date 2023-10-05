@@ -3,6 +3,7 @@ import TrackList from "./TrackList"
 import "../shared/shared-style/headerMusic.css"
 import { useForm } from "react-hook-form"
 import usePlayList from "../../hooks/usePlayList"
+import { Link } from "react-router-dom"
 
 
 const HeaderMusic = () => {
@@ -39,7 +40,8 @@ const HeaderMusic = () => {
             <span>0</span>
         </div>
         <div className="header__music__form__container">
-            <form onSubmit={handleSubmit(submit)} className="header__music__form">  
+            <form onSubmit={handleSubmit(submit)} className="header__music__form">
+                <span className="back__icon"></span>
                 <div className="form__title">
                     <label htmlFor="title">Title:</label>
                     <input {...register("title")} type="text" id="title" placeholder="" />

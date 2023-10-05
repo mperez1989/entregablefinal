@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
 import { deleteTrack } from "../../store/slices/tracksSlice"
+import "../shared/shared-style/trackList.css"
 
 
 const TrackList = ({ track }) => {
@@ -13,16 +14,16 @@ const TrackList = ({ track }) => {
 
     
   return (
-    <section>
-        <header>
+    <section className="tracklist__container">
+        <header className="tracklist__header">
             <img src={track.album.images[0].url} alt="" />
         </header>
-        <article>
-            <h3>{track.name}</h3>
-            <ul>
+        <article className="tracklist__body">
+            <h3 className="tracklist__name">{track.name}</h3>
+            <ul className="artist__name__container">
                 {
                     track.artists.map( artist => (
-                        <li key={artist.id}>{artist.name}</li>
+                        <li className="artist__name" key={artist.id}>{artist.name}</li>
                     ))
                 }
             </ul>
