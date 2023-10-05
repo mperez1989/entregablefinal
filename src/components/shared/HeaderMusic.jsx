@@ -32,25 +32,39 @@ const HeaderMusic = () => {
     
   return (
     <header className="header__container">
-        <h1>Gift Music</h1>
+        <h1 className="header__text">Gift Music</h1>
+        <p className="header__cuenta">Mi Cuenta</p>
+        <div className="header__icon__container">
+            <img src="/icons/header-icon.png" alt="" />
+            <span>0</span>
+        </div>
         <div className="header__music__form__container">
-            <form onSubmit={handleSubmit(submit)} className="header__music__form">
-                
-                <div>
-                    <label htmlFor="title">Title</label>
-                    <input {...register("title")} type="text" id="title" />
-                    <span></span>
+            <form onSubmit={handleSubmit(submit)} className="header__music__form">  
+                <div className="form__title">
+                    <label htmlFor="title">Title:</label>
+                    <input {...register("title")} type="text" id="title" placeholder="" />
+                    <span className="vector"></span>
+                </div>
+                <div className="header__form__image__container">
+                    <img className="casete1" src="/public/images/casete.png" alt="" />
+                    <span className="casete"></span>
+                    <span className="trush"></span>
+                    <span className="share"></span>
+                    <p className="header__form__btn">Lado A <p className="row"></p></p>
+                </div>
+                <div className="header__form__imageb__container">
+                    <img className="casete2" src="/public/images/casete.png" alt="" />
                 </div>
                 
-                <div>
+                <div className="header__form__to">
                     <label htmlFor="to">To</label>
                     <input {...register("to")} type="text" id="to" />
-                    <span></span>
+                    <span className="vector"></span>
                 </div>
-                <div>
+                <div className="header__form__massage">
                     <label htmlFor="message">For</label>
-                    <textarea {...register("message")} id="message" />
-                    <span></span>
+                    <textarea className="textarea__form" {...register("message")} id="message" />
+                    <span className="vector3"></span>
                 </div>
                 <div className="header__music__trackList">
                     {
@@ -64,7 +78,7 @@ const HeaderMusic = () => {
                         ))
                     }
                 </div>
-                <button>Create</button>
+                <button className="header__create__btn">Create</button>
             </form>
         </div>
         
