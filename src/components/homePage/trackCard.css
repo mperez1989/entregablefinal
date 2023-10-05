@@ -38,6 +38,7 @@
     cursor: pointer;
 }
 .card__music-artists__container {
+    width: 150px;
     font-weight: 400;
     font-size: 0.8em;
     padding: 0;
