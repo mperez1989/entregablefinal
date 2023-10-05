@@ -46,14 +46,14 @@ const HeaderMusic = () => {
                     <span className="vector"></span>
                 </div>
                 <div className="header__form__image__container">
-                    <img className="casete1" src="/public/images/casete.png" alt="" />
+                    <img className="casete1" src="/images/casete.png" alt="" />
                     <span className="casete"></span>
                     <span className="trush"></span>
                     <span className="share"></span>
                     <p className="header__form__btn">Lado A <p className="row"></p></p>
                 </div>
                 <div className="header__form__imageb__container">
-                    <img className="casete2" src="/public/images/casete.png" alt="" />
+                    <img className="casete2" src="/images/casete.png" alt="" />
                 </div>
                 
                 <div className="header__form__to">
