@@ -59,12 +59,12 @@ const HeaderMusic = () => {
                 </div>
                 
                 <div className="header__form__to">
-                    <label htmlFor="to">To</label>
+                    <label htmlFor="to">To : </label>
                     <input {...register("to")} type="text" id="to" />
-                    <span className="vector"></span>
+                    <span className="vector2"></span>
                 </div>
                 <div className="header__form__massage">
-                    <label htmlFor="message">For</label>
+                    <label htmlFor="message">For : </label>
                     <textarea className="textarea__form" {...register("message")} id="message" />
                     <span className="vector3"></span>
                 </div>

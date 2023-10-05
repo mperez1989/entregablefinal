@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-left: 15px;
 }
 .tracklist__name {
     font-size: 0.8rem;
