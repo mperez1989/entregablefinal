@@ -45,6 +45,9 @@
     color: rgba(255, 255, 255, 0.4);
     
 }
+.card__music-artist__name {
+    cursor: pointer;
+}
 .card__music__footer {
     width: 50px;
     aspect-ratio: 1;
@@ -56,10 +59,12 @@
 .bxl-spotify {
     font-size: 1.5em;
     color: white;
+    cursor: pointer;
 }
 .bx-plus-circle {
     font-size: 1.5em;
     color: white;
+    cursor: pointer;
 }
 @media(min-width: 500px) {
     .card__music__container {

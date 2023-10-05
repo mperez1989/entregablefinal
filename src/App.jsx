@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux"
 import ProtectedRoute from "./pages/ProtectedRoute"
 import TrackPage from "./pages/TrackPage"
 import ArtistPage from "./pages/ArtistPage"
+import PlayListPage from "./pages/PlayListPage"
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route  path="/tracks/:id" element={<TrackPage />}/>
         <Route path="/artist/:id" element={<ArtistPage />} />
+        <Route path="/playList" element={<PlayListPage />} />
       </Route>
     </Routes>
    </div>
