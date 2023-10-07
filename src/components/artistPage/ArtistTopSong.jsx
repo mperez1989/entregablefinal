@@ -8,7 +8,7 @@ const ArtistTopSong = ({ tracks }) => {
 
   return (
     <section>
-        <h3>Artist´s Songs Top</h3>
+        <h3>Artists Songs Top</h3>
         <div>
             {
                 tracks?.map(trackInfo => (

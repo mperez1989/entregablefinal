@@ -4,7 +4,7 @@ const ArtistInfo = ({ artist }) => {
 
 
   return (
-    <section>
+    <section className="artist__info__container">
         <header>
             <img src={artist?.images[0].url} alt="" />
         </header>

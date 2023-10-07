@@ -11,6 +11,7 @@ const HomePage = () => {
 
   useEffect(() => {
     getListTracks(`/api/tracks?limit=${quantity}&q=${inputValue}`)
+  
   }, [inputValue, quantity])
 
   const inputSearch = useRef()

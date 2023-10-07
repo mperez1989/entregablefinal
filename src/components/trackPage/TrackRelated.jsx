@@ -11,8 +11,7 @@ const TrackRelated = ({ artist }) => {
             getTracksList(`/api/tracks?limit=10&q=${artist}`)
         }
         
-    },[artist])
-    console.log(tracksList)
+    } ,[artist])
 
   return (
     <section>

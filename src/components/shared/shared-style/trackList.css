@@ -44,4 +44,5 @@
 .bx-minus-circle {
     font-size: 25px;
     color: white;
+    cursor: pointer;
 }

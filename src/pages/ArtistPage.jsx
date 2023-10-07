@@ -7,14 +7,13 @@ import ArtistTopSong from "../components/artistPage/ArtistTopSong"
 
 const ArtistPage = () => {
 
-    const  { id } = useParams()
+    const { id } = useParams()
+    const [ artist, getArtist ] = useFetch()
 
-    const [ artist, getArtist] = useFetch()
-    useEffect(()=>{
+    useEffect(() => {
         getArtist(`/api/artists/${id}`)
-    },[id])
+    }, [id])
 
-    console.log(artist)
 
   return (
     <div>

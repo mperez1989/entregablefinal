@@ -5,12 +5,13 @@ import getConfigToken from "../services/getConfigToken"
 
 const useFetch = () => {
 
+    const [infoApi, setInfoApi] = useState()
     const baseUrl = `https://playlist-share-dev.fl0.io`
   
-    const [infoApi, setInfoApi] = useState()
 
     const getApi = (path) => {
         const url = `${baseUrl}${path}`
+        console.log(url)
         axios.get(url, getConfigToken())
         .then(res => setInfoApi(res.data))
         .catch(err => console.log(err))
